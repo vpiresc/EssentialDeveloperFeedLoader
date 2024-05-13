@@ -9,10 +9,25 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
-
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialDeveloperFeedLoader.xcodeproj",
+        "identifier" : "9CEEDC072BE40D9D001D105E",
+        "name" : "EssentialDeveloperFeedLoaderTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialDeveloperFeedLoader.xcodeproj",
+        "identifier" : "9CE26FE42BF27C3A005F2922",
+        "name" : "EssentialFeedEndToEndTests"
+      }
+    }
   ],
   "version" : 1
 }
