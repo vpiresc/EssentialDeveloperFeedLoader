@@ -147,7 +147,7 @@ class RemoteFeedLoaderTests: XCTestCase {
                         file: StaticString = #filePath,
                         line: UInt = #line) {
         
-        let exp = expectation(description: "Wait for load completion")
+        let exp = expectation(description: "Wait for load completion!")
         
         sut.load { receivedResult in
             switch (receivedResult, expectedResult) {
