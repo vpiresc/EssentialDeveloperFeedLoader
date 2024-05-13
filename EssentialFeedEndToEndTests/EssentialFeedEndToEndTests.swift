@@ -11,8 +11,6 @@ import EssentialDeveloperFeedLoader
 final class EssentialFeedEndToEndTests: XCTestCase {
 
     func test_endToEndTestServerGetFeedResult_matchesFixedTestAccountData() {
-  
-        
         switch getFeedResult() {
         case let .success(items)?:
             XCTAssertEqual(items.count, 8, "Expected 8 items in the test account feed")
@@ -48,7 +46,7 @@ final class EssentialFeedEndToEndTests: XCTestCase {
             receivedResult = result
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 5.0)
+        wait(for: [exp], timeout: 10.0)
         return receivedResult
     }
     
