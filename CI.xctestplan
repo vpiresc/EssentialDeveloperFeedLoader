@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "512CA99A-6B2B-407C-A41C-67CB97DBC185",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
